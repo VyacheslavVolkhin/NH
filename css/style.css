@@ -1099,6 +1099,9 @@ body {
   .header-nav-panel .btn-menu.open:before {
     opacity: 1;
   }
+  .header-nav-panel .btn-menu.open {
+    z-index: 130;
+  }
   .header-nav-panel .btn-menu .elm-ico,
   .header-nav-panel .btn-menu .button-title {
     position: relative;
