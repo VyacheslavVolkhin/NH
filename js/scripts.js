@@ -103,6 +103,13 @@ $(document).ready(function(){
 			$(this).addClass('active').next('.js-tab-content').slideDown(200);
 		}
 	})
+    
+    
+    //field clear
+    $('.js-btn-search-clear').on('click', function() {
+        $(this).parent().find('.form-input').val('');
+        return false;
+    })
 
 
     //mobile menu

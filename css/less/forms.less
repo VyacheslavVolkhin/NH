@@ -71,7 +71,7 @@ input[type="submit"] {
         background: #fff;
         color: #3C7DD2;
         &:hover {
-            background: #fff;
+            background: #f0f0f0;
             color: #3C7DD2 - #222;
         }
         &.button-border {
@@ -101,6 +101,13 @@ input[type="submit"] {
     }
     &.button-arrow {
         padding-right: 72px;
+        &.button-light {
+            &:before {
+                background-image: url(../img//icons/arrow06.svg);
+                background-size: 12px auto;
+                filter: none;
+            }
+        }
         &:before {
             content: "";
             display: block;
@@ -112,11 +119,6 @@ input[type="submit"] {
             margin: -12px -12px 0 0;
             background: url(../img/icons/arrow01.svg) center no-repeat;
             background-size: 10px auto;
-        }
-        &.button-light {
-            &:before {
-                filter: none;
-            }
         }
     }
     &.button-border {
@@ -325,6 +327,41 @@ input[type="submit"] {
         .t-rotate(180deg);
         right: auto;
         left: 0;
+    }
+}
+.frm-main-search {
+    display: block;
+    position: relative;
+    line-height: 1;
+    .form-input {
+        border: none;
+        border-radius: 0;
+        height: 81px;
+        padding: 0 100px 0 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--clr-base);
+        background: #FCFCFC;
+        &[placeholder]::-webkit-input-placeholder {color: #7C7C7C;}
+        &[placeholder]:-moz-placeholder {color: #7C7C7C;}
+        &[placeholder]::-moz-placeholder {color: #7C7C7C;}
+        &[placeholder]:-ms-input-placeholder {color: #7C7C7C;}
+    }
+    .btn-action-ico {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        margin-top: -20px;
+        z-index: 2;
+        &.ico-search {
+            right: 94px;
+            &:before {
+                background-image: url(../img/icons/search-att.svg);
+            }
+        }
+        &.ico-close {
+            opacity: 0.6;
+        }
     }
 }
 .frm-popup {
