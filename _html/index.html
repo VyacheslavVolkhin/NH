@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <!-- build:section head -->
+    <!-- /build -->
+    <body>
+        <!-- wrap -->
+        <div class="wrap">
+            
+            <!-- build:section header -->
+            <!-- /build -->
+
+            <!-- page -->
+            <div class="page">
+                <ul style="padding: 100px 0;font-size: 20px;line-height: 1.2;">
+					<li><a href="main.html">Main</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="card.html">Card</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="new.html">New</a></li>
+					<li><a href="diller01.html">Dillers</a></li>
+					<li><a href="diller02.html">About</a></li>
+					<li><a href="diller03.html">Teams</a></li>
+					<li><a href="diller04.html">Manufacted</a></li>
+					<li>----------</li>
+					<li><a href="" data-src="#popup-contact" data-fancybox class="js-btn-popup-contact">Popup contact</a></li>
+					<li><a href="" data-src="#popup-write" data-fancybox class="js-btn-popup-write">Popup write</a></li>
+					<li><a href="" data-src="#popup-order" data-fancybox class="js-btn-popup-order">Popup order</a></li>
+				</ul>
+            </div>
+            <!-- /page -->
+            
+            <!-- build:section footer -->
+            <!-- /build -->
+            
+        </div>
+        <!-- /wrap -->
+
+        <!-- build:section scripts -->
+        <!-- /build -->
+		<script>
+            $(window).on('load', function () {
+                $('.js-open-all').on('click', function () {
+                    $(this).parents('ul').find('[href$=".html"]').each(function () {
+                        window.open(this.href);
+                    })
+                    return false;
+                })
+            });
+		</script>
+    
+    </body>
+</html>
