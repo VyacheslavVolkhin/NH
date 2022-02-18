@@ -377,6 +377,10 @@ body {
 .wrap-main .header .header-nav-panel .search-wrap > .btn-action-ico.ico-search {
   border-color: rgba(223, 223, 223, 0.17);
 }
+.wrap-main .header .header-nav-panel .search-wrap > .btn-action-ico.ico-search:hover {
+  background-color: transparent;
+  opacity: 0.8;
+}
 .wrap-main .header .header-top-panel {
   background: none;
   border-bottom-color: rgba(223, 223, 223, 0.17);
@@ -386,6 +390,9 @@ body {
 }
 .wrap-main .header .header-top-panel a:hover {
   color: #fff;
+}
+.wrap-main .header .header-top-panel a.elm-phone:hover {
+  opacity: 0.8;
 }
 .wrap-main .header .header-top-panel .logo {
   -webkit-filter: brightness(0) invert(1);
