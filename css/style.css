@@ -620,6 +620,11 @@ body {
   width: 80px;
   height: 82px;
 }
+.header-nav-panel .search-wrap > .btn-action-ico.ico-search:hover {
+  background-color: #1F5194;
+  border-left-color: #1F5194;
+  border-right-color: #1F5194;
+}
 .header-nav-panel .search-wrap .search-block {
   display: none;
   position: absolute;
@@ -2177,7 +2182,7 @@ body {
   padding: 0 0 0 17px;
 }
 .elm-phone:hover {
-  color: var(--clr-base);
+  color: var(--clr-att);
 }
 .elm-phone:before {
   content: "";
